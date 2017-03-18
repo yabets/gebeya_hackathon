@@ -47,27 +47,17 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="">Pateints Info</h1>
-            </div>
-        </div>
+    c
+    <ul class="nav menu">
+        <li>Name</li>
+        <li>Age</li>
+        <li>gender</li>
+        <li>Weight</li>
+        <hr>
+        <li>Patiet Id</li>
+        <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> View Patient History</a></li>
 
-        <ul class="nav menu">
-            <li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Name Name </a></li>
-            <li role="presentation" class="divider"></li>
-            <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Age</a></li>
-
-            <li role="presentation" class="divider"></li>
-            <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Gender</a></li>
-
-            <li role="presentation" class="divider"></li>
-            <li svg class="glyph stroked male-user">
-                <use xlink:href="#stroked-male-user"></use>
-                </svg> Weight</a>
-            </li>
-        </ul>
+    </ul>
     </div>
     <!--/.sidebar-->
 
@@ -87,11 +77,11 @@
                 <div class="panel panel-blue panel-widget ">
                     <div class="row no-padding">
                         <div class="col-sm-3 col-lg-5 widget-left">
-                            <svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
+                            <svg class="glyph stroked heart"><use xlink:href="#stroked-heart"></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">120</div>
-                            <div class="text-muted">Patients</div>
+                            <div class="large">180/70</div>
+                            <div class="text-muted">BP</div>
                         </div>
                     </div>
                 </div>
@@ -103,8 +93,8 @@
                             <svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">23</div>
-                            <div class="text-muted">ER</div>
+                            <div class="large">45</div>
+                            <div class="text-muted">Respiration Rate</div>
                         </div>
                     </div>
                 </div>
@@ -116,8 +106,8 @@
                             <svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">24</div>
-                            <div class="text-muted">Doctors</div>
+                            <div class="large">2</div>
+                            <div class="text-muted">Blood Glucose Level</div>
                         </div>
                     </div>
                 </div>
@@ -129,8 +119,8 @@
                             <svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">patientid</div>
-                            <div class="text-muted">Warning</div>
+                            <div class="large">79</div>
+                            <div class="text-muted">Pusle Rate</div>
                         </div>
                     </div>
                 </div>
@@ -141,7 +131,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Patients Data</div>
+                    <div class="panel-heading">ECG Patterns</div>
                     <div class="panel-body">
                         <div class="canvas-wrapper">
                             <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
@@ -152,36 +142,7 @@
         </div>
         <!--/.row-->
 
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4> Patients</h4>
-                        <div class="easypiechart" id="easypiechart-blue" data-percent="92"><span class="percent">92%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4>In ER</h4>
-                        <div class="easypiechart" id="easypiechart-orange" data-percent="65"><span class="percent">65%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body easypiechart-panel">
-                        <h4>New Users</h4>
-                        <div class="easypiechart" id="easypiechart-teal" data-percent="56"><span class="percent">56%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
     </div>
 
     </div>
