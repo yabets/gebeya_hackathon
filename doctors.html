@@ -61,7 +61,7 @@
             <li>Weight</li>
             <hr>
             <li>Patiet Id</li>
-            <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> View Patient History</a></li>
+            <li><a href="patientHistory.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> View Patient History</a></li>
 
         </ul>
     </div>
@@ -140,7 +140,8 @@
                     <div class="panel-heading">ECG Patterns</div>
                     <div class="panel-body">
                         <div class="canvas-wrapper">
-                            <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+                            <canvas id="demo" width=500 height=300></canvas><br>
+
                         </div>
                     </div>
                 </div>
@@ -169,6 +170,8 @@
     <script src="js/easypiechart.js"></script>
     <script src="js/easypiechart-data.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/ecg.js"></script>
+
     <script>
         $('#calendar').datepicker({});
 

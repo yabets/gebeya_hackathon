@@ -46,13 +46,227 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div id="" class="col-sm-12 col-sm-offset-3 col-lg-12 col-lg-offset-3sidebar">
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <form role="search">
+            <div class="form-group">
+                <br/>
+                <li><a href="patientHistory.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Register Patient</a></li>
+                <br/>
+            </div>
+        </form>
+        <ul class="nav menu">
+            <li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li>
+        </ul>
+    </div>
+    <!--/.sidebar-->
+
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+        <!--/.row-->
+
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="">Pateints Info</h1>
+                <h1 class="page-header">Patient Name</h1>
             </div>
         </div>
+        <!--/.row-->
 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-teal">
+                    <div class="panel-heading dark-overlay">
+                        Bio
+                    </div>
+                    <div class="panel-body">
+                        <h3>Name</h3> Patient Name
+                        <h3>Age</h3> 23
+                        <h3>Weight</h3> 67
+                        <h3>Bloodtype</h3> AB
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Medical Record</h2>
+            </div>
+
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab">Feb 23, 2010</a></li>
+                            <li><a href="#tab2" data-toggle="tab">March 3, 2014</a></li>
+                            <li><a href="#tab3" data-toggle="tab">Aug 25, 2016</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1">
+                                <h4>Feb 23, 2010</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                            </div>
+                            <div class="tab-pane fade" id="tab2">
+                                <h4>March 3, 2014</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                            </div>
+                            <div class="tab-pane fade" id="tab3">
+                                <h4>March 3, 2014</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.panel-->
+            </div>
+            <!--/.col-->
+
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Diagnosis</h1>
+            </div>
+        </div>
+        <!--/.row-->
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Form Elements</div>
+                    <div class="panel-body">
+                        <div class="col-md-6">
+                            <form role="form">
+
+                                <div class="form-group">
+                                    <label>Reason for Visit</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Medical Allergies</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Current Medication and Medication</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+
+                                <label>Validation</label>
+                                <div class="form-group has-success">
+                                    <input class="form-control" placeholder="Success">
+                                </div>
+                                <div class="form-group has-warning">
+                                    <input class="form-control" placeholder="Warning">
+                                </div>
+                                <div class="form-group has-error">
+                                    <input class="form-control" placeholder="Error">
+                                </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label>Check the conditions that apply to you or to any members of your immediate relatives</label>
+                                <div class="checkbox">
+                                    <label>
+											<input type="checkbox" value="">Asthma 
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+											<input type="checkbox" value="">Cancer 
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+											<input type="checkbox" value="">Diabities 
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+											<input type="checkbox" value="">Stroke 
+										</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Check all symptoms you are currently experiencing </label>
+                                <div class="radio">
+                                    <label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Allergy
+										</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Chest Pain
+										</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> Fever
+										</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">GastroIntestinal
+										</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>describe your alcohol consumption :</label>
+                                <select class="form-control">
+										<option>Daily</option>
+										<option>Weekly</option>
+										<option>Occasionaly</option>
+										<option> Never</option>
+									</select>
+                            </div>
+
+
+
+                            <button type="submit" class="btn btn-primary">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!--/.col-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+        ! function($) {
+            $(document).on("click", "ul.nav li.parent > a > span.icon", function() {
+                $(this).find('em:first').toggleClass("glyphicon-minus");
+            });
+            $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+        }(window.jQuery);
+
+        $(window).on('resize', function() {
+            if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+        })
+        $(window).on('resize', function() {
+            if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        })
+    </script>
 </body>
 
 </html>
