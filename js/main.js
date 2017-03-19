@@ -67,7 +67,72 @@ var hospitalSchema = {
     }
   }
 };
+var patientSchema = {
+  "type": "object",
+  "properties": {
+    "patient": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/positiveInt"
+        },
+        "first_name": {
+          "type": "string",
+          "faker": "name.firstName"
+        },
+        "last_name": {
+          "type": "string",
+          "faker": "name.lastName"
+        },
+        "age": {
+          "$ref": "#/definitions/age"
+        },
+        "weight": {
+          "$ref": "#/definitions/weight"
+        },
+        "gender": {
+          "type": 'string',
+          "chance": {
+            "pickone": [
+                [
+                    "male",
+                    "female"
+                ]
+            ]
+          }
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "faker": "internet.email"
+        }
+      },
+      "required": ["id", "first_name","last_name","age","gender","weight", "email"]
+    }
+  },
+  "required": ["patient"],
+  "definitions": {
+    "positiveInt": {
+      "type": "integer",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "weight": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum":150,
+      "exclusiveMinimum": true
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum":99,
+      "exclusiveMinimum": true
+    }
 
+  }
+}
 window.hospital = jsf(hospitalSchema);
-console.log(hospital);
+window.patient = jsf(patientSchema);
+console.log(patient);
 })(jQuery,window.jsf,window.rivets);
