@@ -8,10 +8,6 @@ var ctx = demo.getContext('2d'),
     opy = py,
     scanBarWidth = 20;
 
-ctx.strokeStyle = '#ffbdff';
-ctx.lineWidth = 3;
-
-
 
 //duur = dubbele van count - count.
 //duur = 200 --> verschil count = 100 (heartbeat)

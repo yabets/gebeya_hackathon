@@ -55,12 +55,12 @@
         </div>
 
         <ul class="nav menu">
-            <li>Name</li>
-            <li>Age</li>
-            <li>gender</li>
-            <li>Weight</li>
+            <li>Name Ewnetu K.</li>
+            <li>Age 21</li>
+            <li>gender M</li>
+            <li>Weight 55Kg.</li>
             <hr>
-            <li>Patiet Id</li>
+            <li>Patiet Id 2367</li>
             <li><a href="patientHistory.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> View Patient History</a></li>
 
         </ul>
@@ -86,7 +86,7 @@
                             <svg class="glyph stroked heart"><use xlink:href="#stroked-heart"></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">180/70</div>
+                            <div class="large" id="bp">180/70</div>
                             <div class="text-muted">BP</div>
                         </div>
                     </div>
@@ -96,10 +96,10 @@
                 <div class="panel panel-orange panel-widget">
                     <div class="row no-padding">
                         <div class="col-sm-3 col-lg-5 widget-left">
-                            <svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
+                            <svg class="glyph stroked empty-message"><use xlink:href=""></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">45</div>
+                            <div class="large" id="rr">45</div>
                             <div class="text-muted">Respiration Rate</div>
                         </div>
                     </div>
@@ -109,11 +109,11 @@
                 <div class="panel panel-teal panel-widget">
                     <div class="row no-padding">
                         <div class="col-sm-3 col-lg-5 widget-left">
-                            <svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
+                            <svg class="glyph stroked male-user"><use xlink:href=""></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
                             <div class="large">2</div>
-                            <div class="text-muted">Blood Glucose Level</div>
+                            <div class="text-muted" id="bg">Blood Glucose </div>
                         </div>
                     </div>
                 </div>
@@ -122,10 +122,10 @@
                 <div class="panel panel-red panel-widget">
                     <div class="row no-padding">
                         <div class="col-sm-3 col-lg-5 widget-left">
-                            <svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+                            <svg class="glyph stroked app-window-with-content"><use xlink:href=""></use></svg>
                         </div>
                         <div class="col-sm-9 col-lg-7 widget-right">
-                            <div class="large">79</div>
+                            <div class="large" id="">79</div>
                             <div class="text-muted">Pusle Rate</div>
                         </div>
                     </div>
@@ -171,6 +171,9 @@
     <script src="js/easypiechart-data.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/ecg.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/databind.js"></script>
 
     <script>
         $('#calendar').datepicker({});
